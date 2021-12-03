@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Livre</title>
+</head>
+<body>
+    {% if not book %}
+    <p>Is n'y a pas de livre correspondant au critères de vos recherches</p>
+    {% else %}
+    <p>Id: {{book.id}}</p>
+    <p>Titre: {{book.titre}}</p>
+    {% endif %}
+</body>
+</html>
